@@ -21,7 +21,6 @@ class Heading
       headings +=
         "#{tabs} #{get_numbering(item)} #{item[:title].capitalize()} \n"
     end
-    puts headings
     headings
   end
 

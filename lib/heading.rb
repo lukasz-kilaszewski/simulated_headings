@@ -5,7 +5,7 @@ class Heading
 
   def simulated_headings
     #get maximum heading level and prepare auxiliary variable for numbering before heading name
-    max_heading = (@props.map { |x| x[:heading_level] }).max
+    max_heading = (@props.map { |item| item[:heading_level] }).max
     #will count the number of times we add each heading with a level
     @numbering = Array.new(max_heading + 1, 0)
 
